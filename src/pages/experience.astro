@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../styles/global.css";
+import ExperienceSection from "../components/index/s_experience";
+---
+
+<Layout title="Portfolio">
+  <div
+    class="flex flex-col items-center bg-crust text-text text-sm font-mono min-h-screen p-6"
+  >
+    <div class="h-16"></div>
+    <!-- Terminal Body -->
+    <div class="w-[90vw] md:w-[60vw] rounded-b text-sm text-text">
+      <div class="text-xl md:text-2xl font-bold text-primary py-4">
+        ~/Experience/Paid
+      </div>
+      <div
+        class="bg-base rounded-sm flex flex-col gap-2 p-4 border border-gray-700 hover:border-primary/50 transition-colors"
+      >
+        <ExperienceSection />
+      </div>
+    </div>
+  </div>
+</Layout>

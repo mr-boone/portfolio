@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../styles/global.css";
+import TreeDisplay from "../components/tree";
+import Links from "../components/index/s_links";
+import { GrLocationPin } from "react-icons/gr";
+---
+
+<Layout title="Portfolio">
+  <div
+    class="flex justify-center items-center bg-crust text-text text-sm font-mono min-h-screen p-6"
+  >
+    <!-- Terminal Body -->
+    <div
+      class="grid gap-4 grid-cols-1 lg:grid-cols-3 lg:grid-rows-4 w-[90vw] lg:w-[60vw] rounded-b text-sm text-text"
+    >
+      <div
+        class="col-span-1 row-span-1 lg:col-span-2 lg:row-span-3 flex flex-col justify-between gap-4 bg-mantle p-10 shadow-sm shadow-rosewater"
+      >
+        <div class="flex flex-col gap-4">
+          <h1 class="text-2xl lg:text-5xl font-bold">hello, i'm marco</h1>
+          <div class="lg:col-span-4">
+            20yo <span class="text-blue">computer engineering </span>student at <span
+              class="text-blue">U</span
+            >of<span class="text-yellow">M</span>
+          </div>
+        </div>
+
+        <Links />
+      </div>
+      <div
+        class="p-10 bg-mantle row-span-1 col-span-1 lg:row-span-3 flex flex-col gap-4 shadow-sm shadow-rosewater"
+      >
+        <div class="flex gap-4 items-center font-semibold">
+          <span
+            class="w-12 aspect-square p-2 bg-mantle flex justify-center items-center rounded-full shadow-sm shadow-pink"
+            ><span class="font-bold text-xl">MB</span></span
+          >
+          <GrLocationPin /> Ann Arbor, MI
+        </div>
+        <p class="leading-6">
+          I am software oriented, interested in full-stack, robotics, quant, and
+          OS.
+        </p>
+      </div>
+
+      <a
+        href="/experience"
+        class="col-span-1 row-span-1 bg-mantle hidden lg:flex justify-center items-center shadow-sm shadow-red hover:shadow-none hover:scale-[0.975] transition-all duration-100 cursor-pointer"
+      >
+        <span class="font-bold text-2xl">experience</span>
+      </a>
+      <a
+        href="/projects"
+        class="col-span-1 row-span-1 bg-mantle hidden lg:flex justify-center items-center shadow-sm shadow-lavender hover:shadow-none hover:scale-[0.975] transition-all duration-100 cursor-pointer"
+      >
+        <span class="font-bold text-2xl">projects</span>
+      </a>
+      <a
+        href="/tech-stack"
+        class="col-span-1 row-span-1 bg-mantle hidden lg:flex justify-center items-center shadow-sm shadow-teal hover:shadow-none hover:scale-[0.975] transition-all duration-100 cursor-pointer"
+      >
+        <span class="font-bold text-2xl">tech stack</span>
+      </a>
+    </div>
+  </div>
+</Layout>
