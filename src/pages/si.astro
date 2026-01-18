@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../styles/global.css";
+import ExperienceSection from "../components/index/s_experience";
+---
+
+<Layout title="Portfolio">
+  <div
+    class="flex flex-col items-center bg-crust text-text text-sm font-mono min-h-screen p-6"
+  >
+    <div class="h-16"></div>
+    <!-- Terminal Body -->
+    <div class="w-[90vw] md:w-[60vw] rounded-b text-sm text-text">
+      <div class="text-xl md:text-2xl font-bold text-primary py-4">
+        ~/si/math215
+      </div>
+      <div
+        class="bg-base rounded-sm flex flex-col gap-2 p-4 border border-gray-700 hover:border-primary/50 transition-colors"
+      >
+      <span><span class = "font-bold">when</span>: Sunday from 1:00pm to 2:30pm</span>
+      <span><span class = "font-bold">where</span>: 1372 East Hall - Central Campus</span>
+      <span>---</span>
+      <span class = "font-bold">session material: </span>
+      <a class = "text-blue" href="/public/PS1.pdf">session_1</a>
+      <span>---</span>
+      <span class = "font-bold">complied resources:</span>
+      <a class = "text-blue" href="https://math.arizona.edu/~serinh/teaching/math215.html">notes by serin</a>
+      <a class = "text-blue" href="https://tutorial.math.lamar.edu/classes/calciii/calciii.aspx">notes by paul</a>
+      <a class = "text-blue" href="https://youtube.com/playlist?list=PL4C4C8A7D06566F38&si=SiuVBuEmhcdBW5SI">MIT lectures</a>
+      <a class = "text-blue" href="https://dept.math.lsa.umich.edu/courses/215/17exampractice/index.html">previous exams</a>
+      <a class = "text-blue" href="https://www.khanacademy.org/math/multivariable-calculus">Khan Academy</a>
+      <a class = "text-blue" href="https://lsa.umich.edu/math/undergraduates/course-resources/math-lab.html">math lab</a>
+      <a class = "text-blue" href="https://ecas.engin.umich.edu/elc/tutoring/">tutoring</a>
+      <a class = "text-blue" href="https://ecas.engin.umich.edu/elc-si-schedule/">SI schedule</a>
+      
+      </div>
+    </div>
+  </div>
+</Layout>
